@@ -14,14 +14,6 @@ Transport::Transport(string name, double weight, double fuel, int passenger_capa
 
 void Transport::Input()
 {
-	/*cout << "Enter vehicle name -> ";
-	cin >> name;
-	cout << "Enter weight -> ";
-	cin >> weight;
-	cout << "Enter fuel consumption -> ";
-	cin >> fuel;
-	cout << "Enter passenger capacity -> ";
-	cin >> passenger_capacity;*/
 	cout << "Object not found" << endl;
 }
 

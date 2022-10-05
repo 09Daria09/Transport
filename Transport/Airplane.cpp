@@ -4,8 +4,12 @@ Airplane::Airplane():Transport()
 {
 }
 
-Airplane::Airplane(string name, double weight, double fuel, int passenger_capacity, string airport) : Transport(name, weight, fuel, passenger_capacity)
+Airplane::Airplane(string name, double weight, double fuel, int passenger_capacity, string airport) 
 {
+	this->name = name;
+	this->weight = weight;
+	this->fuel = fuel;
+	this->passenger_capacity = passenger_capacity;
     this->airport = airport;
 }
 

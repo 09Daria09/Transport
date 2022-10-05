@@ -12,9 +12,8 @@ protected:
 public:
 	Transport();
 	Transport(string name, double weight, double fuel, int passenger_capacity);
-	virtual void Input();
-	virtual void Print() const;
-	virtual double Fuel_consumption();
-
+	virtual void Input() = 0;
+	virtual void Print() const = 0;
+    virtual double Fuel_consumption() = 0;
 };
 

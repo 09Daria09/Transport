@@ -4,8 +4,12 @@ JeepCar::JeepCar():Transport()
 {
 }
 
-JeepCar::JeepCar(string name, double weight, double fuel, int passenger_capacity, string color) : Transport(name, weight, fuel, passenger_capacity)
+JeepCar::JeepCar(string name, double weight, double fuel, int passenger_capacity, string color) 
 {
+	this->name = name;
+	this->weight = weight;
+	this->fuel = fuel;
+	this->passenger_capacity = passenger_capacity;
     this->color = color;
 }
 

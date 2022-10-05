@@ -4,8 +4,12 @@ Vessel::Vessel():Transport()
 {
 }
 
-Vessel::Vessel(string name, double weight, double fuel, int passenger_capacity, string ocean) : Transport(name, weight, fuel, passenger_capacity)
+Vessel::Vessel(string name, double weight, double fuel, int passenger_capacity, string ocean) 
 {
+	this->name = name;
+	this->weight = weight;
+	this->fuel = fuel;
+	this->passenger_capacity = passenger_capacity;
 	this->ocean = ocean;
 }
 

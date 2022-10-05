@@ -4,8 +4,12 @@ Bicycle::Bicycle() : Transport()
 {
 }
 
-Bicycle::Bicycle(string name, double weight, double fuel, int passenger_capacity, string bike_firm) : Transport(name, weight, fuel, passenger_capacity)
+Bicycle::Bicycle(string name, double weight, double fuel, int passenger_capacity, string bike_firm) 
 {
+	this->name = name;
+	this->weight = weight;
+	this->fuel = fuel;
+	this->passenger_capacity = passenger_capacity;
     this->bike_firm = bike_firm;
 }
 
@@ -29,3 +33,9 @@ void Bicycle::Print() const
 	cout << "Bike firm : " << bike_firm << endl;
 }
 
+double Bicycle::Fuel_consumption()
+{
+	double all_fuel;
+	all_fuel = fuel / 100;
+	return all_fuel;
+}

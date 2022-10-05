@@ -5,8 +5,12 @@ Truk::Truk():Transport()
 {
 }
 
-Truk::Truk(string name, double weight, double fuel, int passenger_capacity, double truk_capacity):Transport(name, weight, fuel, passenger_capacity)
+Truk::Truk(string name, double weight, double fuel, int passenger_capacity, double truk_capacity)
 {
+	this->name = name;
+	this->weight = weight;
+	this->fuel = fuel;
+	this->passenger_capacity = passenger_capacity;
 	this->truck_capacity = truck_capacity;
 }
 
