@@ -38,6 +38,4 @@ int main()
     ptr->Input();
     ptr->Fuel_consumption();
     ptr->Print();
-
-    delete ptr;
 }

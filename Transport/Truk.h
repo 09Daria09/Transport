@@ -4,12 +4,17 @@ class Truk :
     public Transport
 {
     double truck_capacity;
+    char* cargo;
 public:
     Truk();
-    Truk(string name, double weight, double fuel, int passenger_capacity, double truk_capacity);
+    Truk(const char* name, double weight, double fuel, int passenger_capacity, double truk_capacity, const char* cargo);
+
+    Truk(const Truk& obj);
+    Truk& operator=(const Truk& obj);
+
     void Input();
     void Print()const;
     double Fuel_consumption();
-
+    ~Truk();
 };
 

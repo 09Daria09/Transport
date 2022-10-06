@@ -3,12 +3,17 @@
 class Airplane :
     public Transport
 {
-    string airport;
+    char* airport;
 public:
     Airplane();
-    Airplane(string name, double weight, double fuel, int passenger_capacity, string airport);
+    Airplane(const char* name, double weight, double fuel, int passenger_capacity, const char* airport);
+
+    Airplane(const Airplane& obj);
+    Airplane& operator=(const Airplane& obj);
+
     void Input();
     void Print()const;
     double Fuel_consumption();
+    ~Airplane();
 };
 
