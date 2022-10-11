@@ -1,5 +1,5 @@
 #include "Bicycle.h"
-
+using namespace Bicy;
 Bicycle::Bicycle() : Transport()
 {
 	name = nullptr;

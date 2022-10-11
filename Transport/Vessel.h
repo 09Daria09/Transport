@@ -1,21 +1,24 @@
 #pragma once
 #include "Transport.h"
-class Vessel :
-    public Transport
+using namespace Tr;
+namespace Ves
 {
-   char* ocean;
+    class Vessel :
+        public Transport
+    {
+        char* ocean;
 
-public:
-    Vessel();
-    Vessel(const char* name, double weight, double fuel, int passenger_capacity, const char* ocean);
+    public:
+        Vessel();
+        Vessel(const char* name, double weight, double fuel, int passenger_capacity, const char* ocean);
 
-    Vessel(const Vessel& obj);
-    Vessel& operator=(const Vessel& obj);
+        Vessel(const Vessel& obj);
+        Vessel& operator=(const Vessel& obj);
 
-    void Input();
-    void Print()const;
+        void Input();
+        void Print()const;
 
-    double Fuel_consumption();
-    ~Vessel();
-};
-
+        double Fuel_consumption();
+        ~Vessel();
+    };
+}

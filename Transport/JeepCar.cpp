@@ -1,5 +1,5 @@
 #include "JeepCar.h"
-
+using namespace Jeep;
 JeepCar::JeepCar():Transport()
 {
 	name = nullptr;

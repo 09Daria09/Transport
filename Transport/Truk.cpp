@@ -1,6 +1,6 @@
 #include "Truk.h"
 #include <iostream>
-
+using namespace Truk_;
 Truk::Truk():Transport()
 {
 	name = nullptr;

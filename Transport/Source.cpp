@@ -8,6 +8,13 @@
 #include <string>
 
 using namespace std;
+using namespace Tr;
+using namespace Truk_;
+using namespace Ves;
+using namespace Jeep;
+using namespace Bicy;
+using namespace Airpl;
+
 
 int main()
 {

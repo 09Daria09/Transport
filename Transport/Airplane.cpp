@@ -1,4 +1,5 @@
 #include "Airplane.h"
+using namespace Airpl;
 
 Airplane::Airplane():Transport()
 {

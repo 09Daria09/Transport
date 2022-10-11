@@ -1,5 +1,5 @@
 #include "Vessel.h"
-
+using namespace Ves;
 Vessel::Vessel():Transport()
 {
 	name = nullptr;
